@@ -1,0 +1,38 @@
+/*
+        // Handling PopUps in the Selenium!
+        driver.findElement(By.xpath("Path for Alert Button")).click();
+        String message = driver.switchTo().alert().getText();
+        driver.switchTo().alert().accept(); // To Accept the Alert.
+        driver.switchTo().alert().dismiss(); // To confirm No for the Alert.
+        driver.switchTo().alert().sendKeys("Value"); // If the Alert asks for some value.
+         */
+
+        /*
+        // Handling Hover Action in Selenium
+        WebElement user = driver.findElement(By.id("ID of the Element for hovering"));
+        WebElement profile = driver.findElement(By.id("ID which we want to click"));
+        // Creating Action class object!
+        Actions action = new Actions(driver);
+        action.moveToElement(user).perform();
+        action.moveToElement(profile).click().build().perform();
+         */
+
+        /*
+        Working with Dynamic Elements in the Selenium!
+        // Using this the WebDriver will wait for 30 seconds to allow the visibility of all the pages!
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        // visibilityOfAllElementsLocatedBy will force the WebDriver to wait for time until the
+        // Web Page with the given ID is visible!
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("ID of element")));
+        String title = driver.findElement(By.id("ID of Element")).getText();
+         */
+
+        /*
+        // Typecasting the driver reference variable with TakesScreenshot!
+        // Typecasting will allow the methods from TakesScreenshot interface to access the file!
+        // getScreenshotAs() will take argument for the output type of the file!
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+        // Using the FileUtils class, we can copy the generated screenshot file to any location!
+        FileUtils.copyFile(scrFile, new File("/home/prashant_pk/Music/Screenshot.png"));
+         */
